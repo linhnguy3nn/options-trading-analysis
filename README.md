@@ -102,18 +102,14 @@ npm run dev
 - Open Interest = contracts already open
 - If Vol/OI > 2, then theres high probability of unusually high activity relative to existing positions.
 2. Put/Call Ratio (PCR) = Total Put Volume / Total Call Volume
-| PCR | Meaning | 
-|--------|-----------|
-| < 0.8 | Call-heavy flow -> bullish sentiment, market positioning long | 
-| > 1.2 | Put-heavy flow -> bearish sentiment, hedging or directional short | 
-| otherwise | Neutral, no clear directional bias |
+- PCR < 0.8 | Call-heavy flow -> bullish sentiment, market positioning long 
+- PCR > 1.2 | Put-heavy flow -> bearish sentiment, hedging or directional short 
+- otherwise | Neutral, no clear directional bias 
 3. Realized Volatility Rank (RV Rank)
 I calculate 30-day historical volatility over the past year, then compute RV Rank = position of current volatility within 1-year range
-| RV rank | Regime| 
-|-------|-----------|
-| >70 | High volatility | 
-| < 40 | Low volatility | 
-| else| Medium |
+  - RV rank > 70 | High volatility 
+  - RV rank < 40 | Low volatility 
+  - else | Medium 
 This tells us whether options are relatively expensive or cheap compared to recent history
 4. Expected move = (ATM Call Price + ATM Put Price) * 0.85 -> This gives an estimated price range for the current expiry
 5. Straddle detection
