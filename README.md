@@ -90,7 +90,8 @@ cd frontend
 npm install
 npm run dev
 # → http://localhost:5173
-
+```
+---
 ## Signal logic explained:
 1. Volume / Open Interest Ratio (Vol/OI)
 - Volume = contracts traded today
