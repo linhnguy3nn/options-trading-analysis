@@ -60,7 +60,7 @@ uvicorn main:app --reload
 
 **API Example:**
 ```bash
-curl http://localhost:8000/Analyze/NVDA
+curl http://localhost:8000/analyze/NVDA
 ```
 
 ```json
