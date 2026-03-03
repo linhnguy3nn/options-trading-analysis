@@ -90,11 +90,6 @@ cd frontend
 npm install
 npm run dev
 # → http://localhost:5173
-```
-
-> **Note:** To connect to live data, uncomment the real `fetch` call in `App.jsx` and comment out the mock data section.
-
----
 
 ## Signal logic explained:
 1. Volume / Open Interest Ratio (Vol/OI)
